@@ -20,4 +20,3 @@ include = [
 python = ">=3.9,<4.0"
 requests = "^2.31.0"
 beautifulsoup4 = "^4.12.3"
-langcodes = { extras = ["data"], version = "^3.3.0" }
