@@ -1,0 +1,23 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pyfernsehserien"
+version = "1.0.0"
+description = "A scraper for fernsehserien.de"
+license = "GPL-3.0-only"
+authors = ["u2ly <76696f6c@proton.me>"]
+readme = "README.md"
+repository = "https://github.com/u2ly/pyfernsehserien"
+keywords = ["fernsehserien", "scraper", "python"]
+include = [
+    { path = "README.md", format = "sdist" },
+    { path = "LICENSE", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+langcodes = { extras = ["data"], version = "^3.3.0" }
